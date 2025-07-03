@@ -16,8 +16,9 @@ pipeline {
                 echo 'Deploying...'
             }   
         }
-        stage('CPUdetails') {
+        stage('CPU details') {
             steps {
+                echo 'here is brief CPU details'
                 sh '''
                     lscpu
                 '''
